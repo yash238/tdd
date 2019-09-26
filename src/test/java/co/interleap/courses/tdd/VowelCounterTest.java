@@ -2,8 +2,11 @@ package co.interleap.courses.tdd;
 
 import org.junit.Test;
 
-public class VowelCounterTest {
+import static org.junit.Assert.assertEquals;
 
+public class VowelCounterTest {
     @Test
-    public void dummy(){}
+    public void shouldCountZeroWithAnEmptyString(){
+        assertEquals(0, new VowelCounter().count(""));
+    }
 }
