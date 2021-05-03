@@ -14,4 +14,14 @@ public class VowelCounterTest {
     public void shouldCountSingleVowel(){
         assertEquals(1,new VowelCounter().count("u"));
     }
+
+    @Test
+    public void shouldCountAllVowel(){
+        assertEquals(5,new VowelCounter().count("aeiou"));
+    }
+
+    @Test
+    public void shouldCountVowelInString(){
+        assertEquals(10,new VowelCounter().count("Hello all my name is Yash Kalia"));
+    }
 }
